@@ -1,0 +1,4 @@
+echo "a" > a1.txt
+echo "b" > a2.txt
+echo "c" > a3.txt
+echo "d" > a4.txt
