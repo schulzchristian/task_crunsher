@@ -1,4 +1,4 @@
-Task Crunsher
+Task Crunsher v1.0
 =============
 
 Task crunsher is a simple tool to use MPI to execute multiple command line tasks in parallel. It is based on the master worker scheme. To compile the program you need it install boost (www.boost.org) and boost process by Boris Schaeling (see for example http://www.highscore.de/boost/process/). 
