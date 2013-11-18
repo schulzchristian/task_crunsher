@@ -6,11 +6,16 @@ Task crunsher is a simple tool to use MPI to execute multiple command line tasks
 
 Usage
 =======
-First you need to compile the project using the ./compile.sh script. 
-Afterwards you need to create a task_file in which each line stands for a separate task to be executed. 
+To start with task crunsher, you need to compile the project using the ./compile.sh script. 
+
+The next step is to create a task_file in which each line stands for a separate task to be executed. 
 This can also be more compilicated collections of task, i.e. 
 
 mkdir test; cd test; yourcommandhere > output_of_your_command; cd .. .
+
+Usually you can generate the task file for lots of experiments like this:
+
+for seed in `seq 1 100`; do echo "./youprogram --random_seed=$seed"; done > task_file
 
 An example task_file with simple tasks can be found in examples/task_file. 
 It contains the following lines:
