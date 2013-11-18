@@ -25,7 +25,7 @@ echo "b" > a2.txt
 echo "c" > a3.txt
 echo "d" > a4.txt
 
-To run the tasks using the task_crunsher, for example using two mpi working processes, type the following into your command line:
+To run the tasks using task_crunsher, for example using two mpi working processes, type the following into your command line:
 
 mpirun -n 3 ./deploy/task_crunsher examples/task_file
 
