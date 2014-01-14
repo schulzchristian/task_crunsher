@@ -15,14 +15,16 @@ mkdir test; cd test; yourcommandhere > output_of_your_command; cd .. .
 
 Usually you can generate the task file for lots of experiments like this:
 
-for seed in `seq 1 100`; do echo "./youprogram --random_seed=$seed"; done > task_file
+```for seed in `seq 1 100`; do  
+       echo "./yourprogram --random_seed=$seed";  
+done > task_file```
 
 An example task_file with simple tasks can be found in examples/task_file. 
 It contains the following lines:
 
-echo "a" > a1.txt
-echo "b" > a2.txt
-echo "c" > a3.txt
+echo "a" > a1.txt  
+echo "b" > a2.txt  
+echo "c" > a3.txt  
 echo "d" > a4.txt
 
 To run the tasks using task_crunsher, for example using two mpi working processes, type the following into your command line:
