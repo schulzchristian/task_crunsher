@@ -16,6 +16,7 @@ int main(int argn, char **argv)
         bool handle_output = false;
         int ret_code = parse_parameters(argn, argv, task_filename, handle_output );
         if( ret_code ) {
+                MPI::Finalize();
                 return 0;
         }
 
