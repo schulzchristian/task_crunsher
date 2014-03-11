@@ -157,7 +157,7 @@ int task_crunsher::recv_work( string & task ) {
 int task_crunsher::parse_taskfile( string & task_filename, vector<string> & tasks) {
         ifstream file;
         file.open(task_filename.c_str());
-        if (!file || file.fail() || faile.bad()){
+        if (!file || file.fail() || file.bad()){
                 cout << "Error in openening file " <<  task_filename;
                 return 1;
         }
